@@ -1,0 +1,99 @@
+# =========================
+# PyCharm / JetBrains IDE
+# =========================
+.idea/
+*.iml
+
+# =========================
+# Python / FastAPI
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.eggs/
+*.manifest
+*.spec
+
+# 가상환경 (venv)
+.venv/
+venv/
+ENV/
+env/
+
+# =========================
+# 로그 및 캐시
+# =========================
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.DS_Store
+Thumbs.db
+
+# =========================
+# 테스트 및 빌드 산출물
+# =========================
+.coverage
+htmlcov/
+.tox/
+dist/
+build/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.cache/
+
+# =========================
+# 환경 변수 및 보안 파일
+# =========================
+.env
+.env.*   # .env.production, .env.development 등
+*.secret
+*.key
+*.pem
+
+# =========================
+# FastAPI + Uvicorn
+# =========================
+*.pid
+*.sock
+*.db-journal
+
+# =========================
+# Jupyter / Notebook
+# =========================
+.ipynb_checkpoints/
+*.ipynb
+
+# =========================
+# 기타
+# =========================
+# 업로드/임시 파일
+tmp/
+temp/
+*.tmp
+uploads/
+media/
+
+# test 폴더
+user/
+substract_text/
+streamlit/
+requirements1.txt
+requirements3.txt
+
+# json 파일
+*.json
+
+# 더미데이터 생성 파일
+make_dummy_data.py
+make_dummy_data_date.py
+
+# pt파일
+*.pt
