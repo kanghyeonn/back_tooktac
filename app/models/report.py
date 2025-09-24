@@ -1,7 +1,7 @@
 # app/models/report.py
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, TIMESTAMP, JSON
 from sqlalchemy.orm import relationship
-from app.repository.database import Base
+from app.models.base import Base
 from datetime import datetime, timezone
 
 

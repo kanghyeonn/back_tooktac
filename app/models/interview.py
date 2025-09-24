@@ -3,7 +3,7 @@
 from sqlalchemy import Column, Integer, ForeignKey, String, Text, TIMESTAMP
 from sqlalchemy.orm import relationship
 from datetime import datetime
-from app.repository.database import Base
+from app.models.base import Base
 
 class InterviewSession(Base):
     __tablename__ = "interview_session"

@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, JSON
 from sqlalchemy.orm import relationship
-from app.repository.database import Base
+from app.models.base import Base
 
 class Resume(Base):
     __tablename__ = "resume"

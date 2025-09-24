@@ -2,7 +2,7 @@
 
 from sqlalchemy.orm import relationship
 from sqlalchemy import Column, Integer, ForeignKey, Float, String, Text, TIMESTAMP
-from app.repository.database import Base
+from app.models.base import Base
 from datetime import datetime, timezone
 
 class EvaluationResult(Base):
