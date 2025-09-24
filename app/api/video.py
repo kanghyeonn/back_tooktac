@@ -3,8 +3,8 @@ from sqlalchemy.orm import Session  # DB 세션 타입 힌트
 from app.services.vision.posture_analyzer import PostureAnalyzer, PostureCoreModel, PostureSessionState  # 포즈 분석기 구성요소
 from app.services.emotion.emotion_analyzer import EmotionAnalyzer, EmotionCoreModel, EmotionSessionState  # 감정 분석기 구성요소
 from app.utils.auth_ws import get_user_id_from_websocket  # WebSocket에서 사용자 인증 정보 추출
-from app.repository.analysis import VideoEvaluationResult  # 결과 저장용 ORM 모델
-from app.repository.interview import InterviewQuestion, InterviewSession  # 세션/질문 ORM
+from app.models.analysis import VideoEvaluationResult  # 결과 저장용 ORM 모델
+from app.models.interview import InterviewQuestion, InterviewSession  # 세션/질문 ORM
 from app.repository.database import SessionLocal  # DB 세션 팩토리
 import numpy as np  # 바이트→배열 변환
 import cv2  # 이미지 디코딩

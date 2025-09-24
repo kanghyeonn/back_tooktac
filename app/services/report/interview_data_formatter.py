@@ -1,9 +1,9 @@
 # app/services/report/interview_data_formatter.py
 from collections import defaultdict
 from sqlalchemy.orm import Session
-from app.repository.interview import InterviewSession, InterviewQuestion, InterviewAnswer
-from app.repository.analysis import EvaluationResult, VideoEvaluationResult
-from app.services.score.scoring import QuestionTypeWeights
+from app.models.interview import InterviewSession, InterviewQuestion, InterviewAnswer
+from app.models.analysis import EvaluationResult, VideoEvaluationResult
+from app.models.score.scoring import QuestionTypeWeights
 from sqlalchemy.inspection import inspect
 import json
 

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 from sqlalchemy.orm import Session
-from app.repository.interview import InterviewAnswer, InterviewQuestion, InterviewSession
+from app.models.interview import InterviewAnswer, InterviewQuestion, InterviewSession
 from app.services.feedback.speechfeedback import SpeechFeedbackGenerator
 from app.services.speech.speech_analyzer import SpeechAnalyzer
 from app.services.stt.stt_service import STTService
@@ -13,7 +13,7 @@ import threading
 from dotenv import load_dotenv
 from app.repository.database import SessionLocal
 from app.services.text.orchestrator import EvaluationOrchestrator
-from app.repository.analysis import EvaluationResult
+from app.models.analysis import EvaluationResult
 
 load_dotenv()
 

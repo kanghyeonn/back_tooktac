@@ -3,7 +3,7 @@
 from fastapi import APIRouter, Query, Depends
 from sqlalchemy.orm import Session
 from app.repository.database import SessionLocal
-from app.repository.user import User
+from app.models.user import User
 
 router = APIRouter()
 

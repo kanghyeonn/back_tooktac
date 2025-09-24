@@ -2,11 +2,10 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from app.services.text.make_question import InterviewQuestionGenerator
-from app.repository.interview import InterviewSession, InterviewQuestion
+from app.models.interview import InterviewSession, InterviewQuestion
 from app.repository.database import SessionLocal
 from app.services.user.dependencies import get_current_user
 import os
-from dotenv import load_dotenv
 
 router = APIRouter()
 

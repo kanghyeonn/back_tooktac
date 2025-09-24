@@ -8,7 +8,7 @@ from app.api import result_router
 from app.api import report_router
 from app.api import training_page_router
 from fastapi.middleware.cors import CORSMiddleware
-import app.repository.model_registry
+import app.models.model_registry
 
 print(api_key)
 

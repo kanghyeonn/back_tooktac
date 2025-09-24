@@ -4,9 +4,9 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import select, func, and_
 from sqlalchemy.orm import Session
 from app.repository.database import SessionLocal
-from app.repository.interview import InterviewSession
-from app.repository.user import User
-from app.repository.report import FinalReportSummary  # final_report_summary ORM 모델
+from app.models.interview import InterviewSession
+from app.models.user import User
+from app.models.report import FinalReportSummary  # final_report_summary ORM 모델
 from app.services.user.dependencies import get_current_user # 프로젝트에서 사용 중인 인증 의존성
 
 

@@ -3,7 +3,7 @@ import os
 import json
 from typing import Dict, Any, Optional
 from sqlalchemy.orm import Session
-from app.repository.resume import Resume
+from app.models.resume import Resume
 
 class InterviewQuestionGenerator:
     """Gemini API를 사용한 면접 질문 생성 클래스"""

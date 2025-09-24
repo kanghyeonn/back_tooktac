@@ -3,8 +3,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from app.repository.database import SessionLocal
-from app.repository.analysis import EvaluationResult, VideoEvaluationResult
-from app.repository.interview import InterviewSession, InterviewQuestion, InterviewAnswer
+from app.models.analysis import EvaluationResult, VideoEvaluationResult
+from app.models.interview import InterviewSession, InterviewQuestion, InterviewAnswer
 from app.services.user.dependencies import get_current_user
 from app.services.score.scoring import QuestionTypeWeights
 

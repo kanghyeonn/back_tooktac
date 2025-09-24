@@ -3,15 +3,12 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func, and_
 from datetime import datetime, timedelta, date
 import os
-import json
 from typing import List, Dict
 
 from app.repository.database import SessionLocal
 from app.services.user.dependencies import get_current_user
-from app.repository.user import User
-from app.repository.interview import InterviewSession, InterviewQuestion
-from app.repository.analysis import EvaluationResult, VideoEvaluationResult
-from app.repository.report import (
+from app.models.interview import InterviewSession
+from app.models.report import (
     FinalReportSummary, ReportStrength, ReportImprovement,
     ReportAreaScore, ReportQuestionScore
 )
